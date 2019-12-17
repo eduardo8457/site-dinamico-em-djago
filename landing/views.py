@@ -2,12 +2,15 @@ from django.shortcuts import render, redirect
 from .models import Aluno, Usuario
 
 # Create your views here.
-
 def index(request):
+    return render(request,'index.html')
+
+
+
+def contatar(request):
     if request.method == 'POST':
         data_usuario = Usuario()
         data_usuario.email = request.POST['email']
-        data_usuario.senha = request.POST['senha']
         data_usuario.save()
         
         data_aluno = Aluno()
@@ -15,7 +18,7 @@ def index(request):
         data_aluno.frase = request.POST['frase']
         data_aluno.save()
         
-    return render(request, 'index.html')
+    return render(request, 'lista.html')
 
 def listar(request):
     listar_frase = Aluno.objects.filter(ativo=True).all()

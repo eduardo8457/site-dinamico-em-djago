@@ -1,0 +1,39 @@
+body{
+   margin: 0;
+   background-color: lightseagreen;
+}
+
+.navbar-color{
+    background-color: MediumTurquoise;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+    font-size: 15pt;
+}
+
+.p1{
+    width: 100%;
+    height: 400px;
+}
+.logo{
+    width: 100px;
+}
+
+p{
+    font-size: 15pt;
+    color: whitesmoke;
+}
+.sobre{
+    font-size: 22pt;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+

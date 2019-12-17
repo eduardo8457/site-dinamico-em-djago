@@ -1,10 +1,30 @@
 body{
     margin-left: 20px;
     font-family: 'News Cycle', sans-serif;
+    background-color: lightseagreen;
+}
+
+
+.navbar-color{
+    background-color: MediumTurquoise;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+    font-size: 15pt;
+}
+.logo{
+    width: 100px;
 }
 
 .titulo-index{
-    color: blue;
+    margin-right: 50px;
+    color: black;
     font-size: 30pt;
 }
 
@@ -31,9 +51,11 @@ label{
 }
 
 #botao{
-    width: 20%;
-    background-color: rgba(50, 43, 148, 0.36);
+    width: 100px;
+    background-color: black;
+    color: whitesmoke;
     font-weight: bold;
+    border-radius: 30px;
 }
 
 #botao:hover{
@@ -48,7 +70,6 @@ input{
     width: 35%;
 }
 
-.imagem{
-    width: 22%;
-    margin: 20px 20px 20px 0px;
+.div-display{
+   margin-left: 25%;
 }
